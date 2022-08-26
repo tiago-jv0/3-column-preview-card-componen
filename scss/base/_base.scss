@@ -14,9 +14,9 @@ html {
 body {
   background-color: var(--very-light-gray);
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 768px) {
     height: 100vh;
-
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
