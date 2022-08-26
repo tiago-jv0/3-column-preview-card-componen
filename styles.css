@@ -44,6 +44,10 @@ button {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+}
+
 .card {
   padding: 4.8rem;
   border-radius: 8px;
