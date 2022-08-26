@@ -1,0 +1,21 @@
+:root {
+   --bright-orange : hsl(31, 77%, 52%);
+   --dark-cyan : hsl(184, 100%, 22%);
+   --very-dark-cyan : hsl(179, 100%, 13%);
+   --transparent-white : hsla(0, 0%, 100%, 0.75);
+   --very-light-gray: hsl(0, 0%, 95%);
+    
+    --content-width: 29.5rem;
+
+    @media screen and (min-width: 600px) {
+        --content-width: 24rem;
+    }
+
+    //Typography
+    --font-size-normal : 1.5rem;
+
+    --primary-font: 'Lexend Deca', sans-serif;
+    --heading-font: 'Big Shoulders Display', cursive;
+
+}
+

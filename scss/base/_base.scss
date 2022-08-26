@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--very-light-gray);
+
+  @media screen and (min-width: 1440px) {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+img,
+source {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}

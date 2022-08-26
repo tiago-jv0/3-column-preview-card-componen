@@ -1,0 +1,137 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --content-width: 29.5rem;
+  --font-size-normal: 1.5rem;
+  --primary-font: "Lexend Deca", sans-serif;
+  --heading-font: "Big Shoulders Display", cursive;
+}
+@media screen and (min-width: 600px) {
+  :root {
+    --content-width: 24rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--very-light-gray);
+}
+@media screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+img,
+source {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.card {
+  padding: 4.8rem;
+  border-radius: 8px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--font-size-normal);
+  line-height: 2.5rem;
+}
+.card--primary {
+  background-color: var(--bright-orange);
+}
+.card--primary .card__button {
+  color: var(--bright-orange);
+}
+.card--secondary {
+  background-color: var(--dark-cyan);
+}
+.card--secondary .card__button {
+  color: var(--dark-cyan);
+}
+.card--tertiary {
+  background-color: var(--very-dark-cyan);
+}
+.card--tertiary .card__button {
+  color: var(--very-dark-cyan);
+}
+@media screen and (min-width: 1440px) {
+  .card {
+    max-width: 30.7rem;
+  }
+}
+.card__title {
+  margin-top: 3.5rem;
+  font-family: var(--heading-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+}
+.card__description {
+  margin-top: 2.5rem;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+.card__button {
+  color: currentColor;
+  margin-top: 2.5rem;
+  width: 14.6rem;
+  height: 4.8rem;
+  border: none;
+  background-color: var(--very-light-gray);
+  border-radius: 25px;
+}
+@media screen and (min-width: 1440px) {
+  .card__button {
+    margin-top: 8.3rem;
+  }
+}
+.card__button:hover {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+.cards > *:not(first-of-type) {
+  margin-top: -1rem;
+}
+@media screen and (min-width: 1440px) {
+  .cards {
+    flex-direction: row;
+  }
+  .cards > *:not(first-of-type) {
+    margin-top: 0;
+    margin-left: -1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
