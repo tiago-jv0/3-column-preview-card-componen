@@ -4,12 +4,6 @@
    --very-dark-cyan : hsl(179, 100%, 13%);
    --transparent-white : hsla(0, 0%, 100%, 0.75);
    --very-light-gray: hsl(0, 0%, 95%);
-    
-    --content-width: 29.5rem;
-
-    @media screen and (min-width: 600px) {
-        --content-width: 24rem;
-    }
 
     //Typography
     --font-size-normal : 1.5rem;
