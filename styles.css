@@ -24,13 +24,13 @@ html {
 
 body {
   background-color: var(--very-light-gray);
+  padding: 2rem;
 }
 @media screen and (min-width: 768px) {
   body {
     height: 100vh;
-    padding: 2rem;
+    padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
   }
 }
@@ -126,6 +126,7 @@ ul {
 @media screen and (min-width: 768px) {
   .cards {
     flex-direction: row;
+    margin-top: 17.1rem;
   }
   .cards > *:not(first-of-type) {
     margin-top: 0;
